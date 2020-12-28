@@ -1,0 +1,38 @@
+ArrayList -> Indeksowana lista o dynamicznie zmieniajacych sie rozmiarach, szybki czas przegladania, wolny czas dodawania i usuwania ze srodka kolekcji
+
+LinkedList -> Uporzadkowana lista pozwalajaca na szybkie wstaiwanie i usuwanie elementow w dowolnej lokalizacji, wolny czas przegladania elementow w srodku
+kolekcji, szybki czas dodawania i usuwania ze srodka, iterator
+
+ArrayDeque -> Nieposiadajaca ani poczatku ani konca lista cykliczna
+
+HashSet -> Nieuporzadkowana kolekcja, w ktorej obiekty musza byc unikatowe, pozwala szybciej wyszukiwac elementy niz w LinkedLiscie
+
+TreeSet -> Uporzadkowany zbior, posortowany, dodawanie w odpowiednim wolniejsze niz w HashSet ale i tak szybsze niz w linked i arrayliscie, SortedSet i NavigableSet
+SortedSet(first, last -> zwraca namniejszy lub najwiekszy element posortownego zbioru)
+NavigableSet(higher, lower(E value) -> zwraca element wiekszy lub mniejszy od podanej wartosci) -> lokalizowane i iteracja zbiorow wstecz
+(ceiling, floor (E value) -> najmniejszy element wiekszy lub rowny wartosci value i na odwrot
+pollFirst, pollLast -> usuwa i zwraca najmniejszy lub najwiekszy element zbioru lub null jesli zbior jest pusty
+
+EnumSet -> Zbior wartosci typu wyliczeniowego
+
+LinkedHashSet -> Zbior pamietajacy kolejnosc wstawianych do niego elementow 
+
+PriorityQueue -> Kolekcja pozwalajace na szybkie usuniecie najmniejszego elementu 
+
+HashMap -> Struktura danych przechowujaca pary klucz - wartosc 
+
+TreeMap -> Slownik sortujacy klucze 
+
+EnumMap -> Slownik w ktorym klucze sa typami wyliczeniowymi
+
+LinkedHashMap -> Slownik pamietajacy kolejnosc wstawianych elementow 
+
+WeakHashMap -> Slownik ktorego wartosci moga zostac usuniete przez smieciarke jestli nie sa uzywane gdzies indziej 
+
+IdentityHashMap -> Slownik przechowujacy klucze za pomoca operatora == zamiast metody equals
+
+
+
+
+ListIterator -> Rozszerzea Iterator i ma metode add by dodac element w konkretnym miejscu, uzywa sie go tylko w uporzadkowanych kolekcjach, zawiera rowzniez
+metody do poruszania sie wstecz
